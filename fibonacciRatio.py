@@ -1,6 +1,8 @@
 #program that shows how the ratio between consecutive pairs of
 #fibonacci numbers approaches the golden ratio
 
+#The original image produced by this graph is called fibonacciRatioGraph
+
 import matplotlib.pyplot as plt
 
 def fibonacci(n): #function that returns the first n fibonacci numbers
@@ -83,5 +85,5 @@ handles, labels = plt.gca().get_legend_handles_labels() #the handles and labels 
 order = [0,2,1] #the order of the labels are changed
 plt.legend([handles[idx] for idx in order],[labels[idx] for idx in order]) #the legend is formed with the order
 
-plt.show() 
+plt.show() #outputs the graph
 
